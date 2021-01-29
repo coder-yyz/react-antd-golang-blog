@@ -1,0 +1,30 @@
+@import '~antd/dist/antd.css';
+
+.card{
+    width:750px; 
+    /* height:300px; */
+    border-radius:15px;
+    background-size: 100% 300px;
+    background-repeat: no-repeat;
+    border: 1px solid #808e9b;
+    background-color: #d2dae2;
+    opacity: 0.7;
+    margin:0  auto;
+}
+.card:hover .info{
+    display: block;
+    opacity: 0.8;
+}
+.info{
+    display: none;
+}
+.type{
+    width: 80px;
+    height: 30px;
+    word-wrap: none;
+    color: #05c46b;
+    font-weight: bold;
+    border-radius: 8px;
+    border: springgreen 2px solid;
+    text-align: center;
+}

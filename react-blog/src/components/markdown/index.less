@@ -1,0 +1,108 @@
+// index.less
+.centent {
+    /*对 markdown 样式的补充*/
+    code,
+    pre {
+      color: #ccc;
+      background: black !important;
+      font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+      font-size: 1em;
+      text-align: left;
+      white-space: pre;
+      word-spacing: normal;
+      word-break: normal;
+      word-wrap: normal;
+      line-height: 1.5;
+      tab-size: 4;
+      hyphens: none;
+      overflow-y: hidden;
+    }
+  
+    pre {
+      background: #2d2d2d;
+      position: relative;
+      padding-left: 3.8em;
+    }
+  
+    code {
+      position: relative;
+      white-space: inherit;
+      background-color: black;
+    }
+  
+    span[line-row] {
+      position: absolute;
+      pointer-events: none;
+      top: 0;
+      font-size: 100%;
+      left: -3.8em;
+      width: 3em;
+      letter-spacing: -1px;
+      border-right: 1px solid #999;
+      user-select: none;
+      counter-reset: linenumber;
+    }
+  
+    span[line-row]>span {
+      pointer-events: none;
+      display: block;
+      counter-increment: linenumber;
+    }
+  
+    span[line-row]>span::before {
+      content: counter(linenumber);
+      color: #999;
+      display: block;
+      padding-right: .8em;
+      text-align: right
+    }
+  
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 1em;
+    }
+  
+    strong {
+      font-weight: bold;
+    }
+  
+    p>code:not([class]) {
+      padding: 2px 4px;
+      font-size: 90%;
+      color: #c7254e;
+      background-color: #f9f2f4;
+      border-radius: 4px;
+    }
+  
+    p img {
+      /* 图片居中 */
+      margin: 0 auto;
+      display: flex;
+    }
+  
+    #content {
+      font-family: "Microsoft YaHei", 'sans-serif';
+      font-size: 16px;
+      line-height: 30px;
+    }
+  
+    #content .desc ul,
+    #content .desc ol {
+      color: #333333;
+      margin: 1.5em 0 0 25px;
+    }
+  
+    #content .desc h1,
+    #content .desc h2 {
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+  
+    #content .desc a {
+      color: #009a61;
+    }
+  }
